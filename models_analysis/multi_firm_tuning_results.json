@@ -1,0 +1,145 @@
+{
+    "lightgbm": {
+        "best_params": {
+            "lambda_l1": 1.1831840825199607,
+            "lambda_l2": 0.6737215057623974,
+            "num_leaves": 59,
+            "feature_fraction": 0.6350702860071836,
+            "bagging_fraction": 0.627216130866271,
+            "bagging_freq": 2,
+            "min_child_samples": 18,
+            "learning_rate": 0.07819371721475231,
+            "max_depth": 3,
+            "n_estimators": 260
+        },
+        "validation_rmse": 724.1639565808207,
+        "validation_r2": 0.779464870865169
+    },
+    "prophet": {
+        "0.0": {
+            "best_params": {
+                "changepoint_prior_scale": 0.001,
+                "seasonality_prior_scale": 0.01,
+                "holidays_prior_scale": 1.0,
+                "seasonality_mode": "additive",
+                "changepoint_range": 0.8
+            },
+            "validation_rmse": 652.5441122646902,
+            "validation_r2": -0.27437720691777523
+        },
+        "30.0": {
+            "best_params": {
+                "changepoint_prior_scale": 0.001,
+                "seasonality_prior_scale": 0.01,
+                "holidays_prior_scale": 10.0,
+                "seasonality_mode": "additive",
+                "changepoint_range": 0.8
+            },
+            "validation_rmse": 135.9022054211085,
+            "validation_r2": -0.7931866692382532
+        },
+        "4.0": {
+            "best_params": {
+                "changepoint_prior_scale": 0.001,
+                "seasonality_prior_scale": 1.0,
+                "holidays_prior_scale": 0.01,
+                "seasonality_mode": "additive",
+                "changepoint_range": 0.8
+            },
+            "validation_rmse": 380.9688210555228,
+            "validation_r2": 0.3225296178218596
+        },
+        "31.0": {
+            "best_params": {
+                "changepoint_prior_scale": 0.001,
+                "seasonality_prior_scale": 10.0,
+                "holidays_prior_scale": 10.0,
+                "seasonality_mode": "additive",
+                "changepoint_range": 0.8
+            },
+            "validation_rmse": 73.93273369379138,
+            "validation_r2": -0.0442276623317448
+        },
+        "32.0": {
+            "best_params": {
+                "changepoint_prior_scale": 0.1,
+                "seasonality_prior_scale": 1.0,
+                "holidays_prior_scale": 0.1,
+                "seasonality_mode": "additive",
+                "changepoint_range": 0.9
+            },
+            "validation_rmse": 188.83041552974848,
+            "validation_r2": 0.4023196552503746
+        },
+        "33.0": {
+            "best_params": {
+                "changepoint_prior_scale": 0.05,
+                "seasonality_prior_scale": 0.01,
+                "holidays_prior_scale": 1.0,
+                "seasonality_mode": "additive",
+                "changepoint_range": 0.95
+            },
+            "validation_rmse": 98.12348827642577,
+            "validation_r2": -0.6921126099222834
+        },
+        "34.0": {
+            "best_params": {
+                "changepoint_prior_scale": 0.05,
+                "seasonality_prior_scale": 0.1,
+                "holidays_prior_scale": 0.01,
+                "seasonality_mode": "additive",
+                "changepoint_range": 0.9
+            },
+            "validation_rmse": 61.0212385461853,
+            "validation_r2": 0.4666249627227159
+        },
+        "35.0": {
+            "best_params": {
+                "changepoint_prior_scale": 0.001,
+                "seasonality_prior_scale": 0.01,
+                "holidays_prior_scale": 1.0,
+                "seasonality_mode": "additive",
+                "changepoint_range": 0.8
+            },
+            "validation_rmse": 185.48172187806833,
+            "validation_r2": 0.030928975967255412
+        },
+        "3.0": {
+            "best_params": {
+                "changepoint_prior_scale": 0.05,
+                "seasonality_prior_scale": 0.01,
+                "holidays_prior_scale": 1.0,
+                "seasonality_mode": "additive",
+                "changepoint_range": 0.95
+            },
+            "validation_rmse": 590.9737887290994,
+            "validation_r2": -0.47076678631497204
+        },
+        "36.0": {
+            "best_params": {
+                "changepoint_prior_scale": 0.001,
+                "seasonality_prior_scale": 0.01,
+                "holidays_prior_scale": 10.0,
+                "seasonality_mode": "additive",
+                "changepoint_range": 0.8
+            },
+            "validation_rmse": 611.9192228586646,
+            "validation_r2": -2.1503053461508
+        }
+    },
+    "ensemble": {
+        "global": {
+            "weights": {
+                "lightgbm": 0.5,
+                "prophet": 0.5
+            },
+            "validation_rmse": "N/A",
+            "validation_r2": "N/A"
+        }
+    },
+    "overall_improvement": {
+        "avg_prophet_rmse": null,
+        "avg_ensemble_rmse": null,
+        "improvement_percentage": null
+    }
+}
